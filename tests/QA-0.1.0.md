@@ -1,12 +1,21 @@
-# Opening Hours PL 0.1.0 local QA record
+# Opening Hours PL 0.1.0 QA record
 
-Updated: 2026-11-05. This is a local self-hosted release candidate, not a public release.
+Updated: 2026-11-05. Version 0.1.0 is a public GitHub prerelease for manual, self-hosted installation. Manual publication gates remain below.
 
 ## Exact artifact
 
-- ZIP: `dist/digicyfr-opening-hours-pl-0.1.0.zip` (13 runtime/documentation files, one plugin root, mode 0644)
+- ZIP: [public v0.1.0 asset](https://github.com/digicyfr/digicyfr-opening-hours-pl/releases/download/v0.1.0/digicyfr-opening-hours-pl-0.1.0.zip) (13 runtime/documentation files, one plugin root, mode 0644)
 - SHA-256: `ab3a1b0f326387c652ee3bd27d7fadc011d8738abec18eb0ae9ad1dbae3e4ea9`
-- Standalone `tools/release.py build` and `verify` passed, matching the manifest and source byte for byte. Compared with the prior `e333b07f` candidate, only bundled `README.md` and `readme.txt` changed; runtime files are byte-identical.
+- The public ZIP was downloaded with its SHA-256 sidecar and verified on 2026-11-05. Standalone `tools/release.py verify --archive` matched the manifest and current source byte for byte; the downloaded ZIP also matched local `dist` bytes. Compared with the prior `e333b07f` candidate, only bundled `README.md` and `readme.txt` changed; runtime files are byte-identical.
+
+## Post-tag browser check on the exact public ZIP (2026-11-05)
+
+The verified public asset was installed on a new disposable WordPress 7.1/PHP 8.3.33/MariaDB 11.4.13 site with timezone `Europe/Warsaw`. All page content, hours and notices below are synthetic.
+
+- A real administrator `options.php` first save with an invalid exception date displayed a visible Settings API error and kept the seven-day preview unconfigured. A valid save persisted two Monday intervals (`09:00–12:00`, `13:00–17:00`), a next-day exception (`12:00–15:00`), and an inclusive temporary notice. The preview showed seven site-local dates and the saved exception and notice. A later invalid Monday interval (`17:00–09:00`) displayed an error naming Monday while the prior saved values and preview remained intact. [Unconfigured](evidence/0.1.0/unconfigured-settings.png), [invalid first save](evidence/0.1.0/invalid-first-save.png), [valid preview](evidence/0.1.0/valid-seven-day-preview.png), [invalid edit retained schedule](evidence/0.1.0/invalid-edit-preserved-schedule.png).
+- In the actual block editor, the Block Inserter found and inserted **Opening Hours PL**. Publishing the page stored `<!-- wp:digicyfr/opening-hours /-->`; an anonymous public browser request rendered the seven-row schedule, exception and notice. [Editor insertion](evidence/0.1.0/editor-block-inserted.png) and [published page](evidence/0.1.0/published-block.png).
+- At a 390px viewport, the settings document width was 390px and the notice textarea ended at 378px. The public page also stayed 390px wide, with all seven rows visible. [Mobile settings](evidence/0.1.0/settings-390px.png) and [mobile public block](evidence/0.1.0/published-block-390px.png). No browser script errors occurred in the completed checks.
+- Both disposable containers and volumes were removed. The public ZIP, sidecar, release branch and tag were not changed by this documentation update.
 
 ## Checks passed
 
@@ -29,4 +38,4 @@ WordPress.org Plugin Check ran against the runtime-identical prior ZIP installed
 
 - The integration fixture uses real `update_option()`, which bypasses the `options.php` nonce, capability and unslash steps; the Chromium save exercises the actual nonce-protected `options.php` path. No forged contributor POST or screen-reader run was performed. Capability denial was checked at the settings page; WordPress core enforces the Settings API capability and nonce on POST.
 - No upgrade migration exists yet because 0.1.0 is the first version. Older WordPress/PHP versions and multisite network behavior were not tested. Uninstall multisite code follows the same pattern used by plugin #1 but was not exercised on a multisite fixture.
-- Interactive editor insertion passed on a runtime-identical ZIP before the final documentation-only rebuild. A full screen-reader run remains a pre-publication check. A full-page cache rollover was documented but not tested with a cache plugin.
+- Interactive editor insertion also passed on the exact public ZIP after tagging. A full screen-reader run remains a stable-publication check. A full-page cache rollover was documented but not tested with a cache plugin.
