@@ -1,6 +1,10 @@
 # Opening Hours PL 0.1.0 QA record
 
-Updated: 2026-11-05. Version 0.1.0 is a public GitHub prerelease for manual, self-hosted installation. Manual publication gates remain below.
+Updated: 2026-11-05. Version 0.1.0 is a stable self-hosted GitHub release. This QA record distinguishes automated checks from untested human and representative-site checks.
+
+## Release decision (2026-11-05)
+
+The published ZIP passed exact-artifact installation, integration, DST fixtures, normal browser settings/public-block flows, keyboard and 390px checks, plugin-owned axe-core scans, and a synthetic cache-midnight rollover test. Digicyfr accepted browser automation for this release decision. Human screen-reader, inconclusive admin contrast, representative production cache/site, older WordPress/PHP and multisite checks remain untested; no WCAG conformance claim is made. The stable label does not change the tagged source, protected release branch or ZIP bytes.
 
 ## Exact artifact
 
@@ -48,4 +52,4 @@ WordPress.org Plugin Check ran against the runtime-identical prior ZIP installed
 
 - The integration fixture uses real `update_option()`, which bypasses the `options.php` nonce, capability and unslash steps; the Chromium save exercises the actual nonce-protected `options.php` path. No forged contributor POST or screen-reader run was performed. Capability denial was checked at the settings page; WordPress core enforces the Settings API capability and nonce on POST.
 - No upgrade migration exists yet because 0.1.0 is the first version. Older WordPress/PHP versions and multisite network behavior were not tested. Uninstall multisite code follows the same pattern used by plugin #1 but was not exercised on a multisite fixture.
-- Interactive editor insertion also passed on the exact public ZIP after tagging. A full screen-reader run remains a stable-publication check. The synthetic page-cache rollover above passed; a representative third-party or production full-page cache remains untested.
+- Interactive editor insertion also passed on the exact public ZIP after tagging. A full human screen-reader run remains untested, and automated checks do not replace it. The synthetic page-cache rollover above passed; a representative third-party or production full-page cache remains untested.
