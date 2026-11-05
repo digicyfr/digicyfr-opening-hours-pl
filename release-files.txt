@@ -1,0 +1,12 @@
+# Runtime files and user documentation only. No tests or build scripts.
+digicyfr-opening-hours-pl.php
+includes
+blocks
+assets
+languages/digicyfr-opening-hours-pl-pl_PL.mo
+languages/digicyfr-opening-hours-pl-pl_PL.po
+uninstall.php
+readme.txt
+README.md
+CHANGELOG.md
+LICENSE

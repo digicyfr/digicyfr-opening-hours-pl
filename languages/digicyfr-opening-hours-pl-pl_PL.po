@@ -1,0 +1,187 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Digicyfr Opening Hours PL 0.1.0\n"
+"Language: pl_PL\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+msgid "An enabled notice needs text and a start date on or before its end date."
+msgstr "Włączony komunikat wymaga tekstu oraz daty początkowej nie późniejszej niż data końcowa."
+
+msgid "Closed"
+msgstr "Zamknięte"
+
+msgid "Closed exception on row %d cannot have hours."
+msgstr "Wyjątek zamknięcia w wierszu %d nie może zawierać godzin."
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Dated exceptions"
+msgstr "Wyjątki dla dat"
+
+msgid "Duplicate exception date on row %d."
+msgstr "Powtórzona data wyjątku w wierszu %d."
+
+msgid "End date"
+msgstr "Data końcowa"
+
+msgid "Exception label on row %d exceeds 120 characters."
+msgstr "Etykieta w wierszu %d przekracza 120 znaków."
+
+msgid "Exception line %d needs a date, hours or closed, and an optional label."
+msgstr "Wiersz wyjątku %d wymaga daty, godzin lub słowa closed oraz opcjonalnej etykiety."
+
+msgid "Exceptions"
+msgstr "Wyjątki"
+
+msgid "Exceptions must be plain text lines."
+msgstr "Wyjątki muszą być zwykłymi wierszami tekstu."
+
+msgid "Exceptions text is too long."
+msgstr "Tekst wyjątków jest zbyt długi."
+
+msgid "Friday"
+msgstr "Piątek"
+
+msgid "Hours"
+msgstr "Godziny"
+
+msgid "Hours exception on row %d needs at least one interval."
+msgstr "Wyjątek godzinowy w wierszu %d wymaga co najmniej jednego przedziału."
+
+msgid "Interval %d end"
+msgstr "Przedział %d, koniec"
+
+msgid "Interval %d start"
+msgstr "Przedział %d, początek"
+
+msgid "Intervals overlap in %s."
+msgstr "Przedziały godzin nakładają się w: %s."
+
+msgid "Invalid date on exception row %d. Use YYYY-MM-DD."
+msgstr "Nieprawidłowa data w wierszu wyjątku %d. Użyj YYYY-MM-DD."
+
+msgid "Invalid exception row %d."
+msgstr "Nieprawidłowy wiersz wyjątku %d."
+
+msgid "Invalid hours for weekday %d."
+msgstr "Nieprawidłowe godziny dla dnia tygodnia %d."
+
+msgid "Invalid hours on exception line %d."
+msgstr "Nieprawidłowe godziny w wierszu wyjątku %d."
+
+msgid "Invalid interval in %s."
+msgstr "Nieprawidłowy przedział godzin w: %s."
+
+msgid "Invalid interval in %s. Use HH:MM, with start before end. Split overnight hours across two dates."
+msgstr "Nieprawidłowy przedział godzin w: %s. Użyj HH:MM, z początkiem przed końcem. Godziny nocne podziel na dwie daty."
+
+msgid "Invalid label on exception row %d."
+msgstr "Nieprawidłowa etykieta w wierszu wyjątku %d."
+
+msgid "Invalid temporary notice."
+msgstr "Nieprawidłowy komunikat tymczasowy."
+
+msgid "Invalid type on exception row %d."
+msgstr "Nieprawidłowy typ w wierszu wyjątku %d."
+
+msgid "Monday"
+msgstr "Poniedziałek"
+
+msgid "Notice dates must use valid YYYY-MM-DD dates."
+msgstr "Daty komunikatu muszą być poprawnymi datami YYYY-MM-DD."
+
+msgid "Notice text"
+msgstr "Treść komunikatu"
+
+msgid "One line per date: YYYY-MM-DD | closed | Optional label, or YYYY-MM-DD | 09:00-12:00,13:00-17:00 | Optional label. An exception replaces that date’s regular hours."
+msgstr "Jeden wiersz na datę: YYYY-MM-DD | closed | Opcjonalna etykieta albo YYYY-MM-DD | 09:00-12:00,13:00-17:00 | Opcjonalna etykieta. Wyjątek zastępuje regularne godziny tego dnia."
+
+msgid "Opening Hours PL"
+msgstr "Godziny otwarcia PL"
+
+msgid "Opening hours for the next seven days"
+msgstr "Godziny otwarcia na następne siedem dni"
+
+msgid "Opening hours have not been configured yet."
+msgstr "Godziny otwarcia nie zostały jeszcze skonfigurowane."
+
+msgid "Regular weekly hours"
+msgstr "Regularne godziny tygodniowe"
+
+msgid "Saturday"
+msgstr "Sobota"
+
+msgid "Save opening hours"
+msgstr "Zapisz godziny otwarcia"
+
+msgid "Saved seven-day preview"
+msgstr "Podgląd zapisanych siedmiu dni"
+
+msgid "Shortcode:"
+msgstr "Krótki kod:"
+
+msgid "Show notice during the inclusive date range"
+msgstr "Pokaż komunikat od daty początkowej do końcowej włącznie"
+
+msgid "Show one location's owner-entered weekly hours and dated exceptions."
+msgstr "Pokaż godziny tygodniowe i wyjątki dla jednej lokalizacji, wprowadzone przez właściciela."
+
+msgid "Show the next seven days of owner-entered opening hours."
+msgstr "Pokaż następne siedem dni godzin otwarcia wprowadzonych przez właściciela."
+
+msgid "Start date"
+msgstr "Data początkowa"
+
+msgid "Sunday"
+msgstr "Niedziela"
+
+msgid "Temporary notice"
+msgstr "Komunikat tymczasowy"
+
+msgid "The saved schedule appears on the published page. Preview it under Settings → Opening Hours PL."
+msgstr "Zapisany harmonogram pojawi się na opublikowanej stronie. Podgląd znajdziesz w Ustawienia → Godziny otwarcia PL."
+
+msgid "The schedule submission is invalid."
+msgstr "Przesłany harmonogram jest nieprawidłowy."
+
+msgid "The temporary notice exceeds 250 characters."
+msgstr "Komunikat tymczasowy przekracza 250 znaków."
+
+msgid "This site uses a fixed UTC offset. It will not follow daylight-saving changes. Choose a city timezone such as Europe/Warsaw in WordPress Settings if that is what your business uses."
+msgstr "Ta witryna używa stałego przesunięcia UTC. Nie uwzględnia ono zmian czasu. Jeśli Twoja firma korzysta z takiej strefy, wybierz strefę miasta, np. Europe/Warsaw, w ustawieniach WordPressa."
+
+msgid "Thursday"
+msgstr "Czwartek"
+
+msgid "Times and dates use the site timezone:"
+msgstr "Godziny i daty używają strefy czasowej witryny:"
+
+msgid "Tuesday"
+msgstr "Wtorek"
+
+msgid "Use at most four intervals in %s."
+msgstr "Użyj najwyżej czterech przedziałów godzin w: %s."
+
+msgid "Use no more than 366 dated exceptions."
+msgstr "Użyj najwyżej 366 wyjątków z datą."
+
+msgid "Use up to four intervals per day. Leave every row blank to mark a day closed. Enter 24:00 only as an end time; split overnight hours across two dates."
+msgstr "Użyj najwyżej czterech przedziałów dziennie. Pozostaw wszystkie pola puste, aby oznaczyć dzień jako zamknięty. Godziny 24:00 używaj tylko jako końca; godziny nocne podziel na dwie daty."
+
+msgid "Wednesday"
+msgstr "Środa"
+
+msgid "Weekly hours are missing."
+msgstr "Brakuje godzin tygodniowych."
+
+msgid "Weekly hours must be an array."
+msgstr "Godziny tygodniowe mają nieprawidłową strukturę."
+
+msgid "You are not allowed to manage opening hours."
+msgstr "Nie masz uprawnień do zarządzania godzinami otwarcia."
+
+msgid "exception row %d"
+msgstr "wiersz wyjątku %d"

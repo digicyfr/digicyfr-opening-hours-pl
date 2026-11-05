@@ -1,0 +1,48 @@
+.digicyfr-opening-hours-pl-admin .digicyfr-opening-hours-pl-day {
+	border: 1px solid #c3c4c7;
+	margin-block: 1em;
+	max-width: 54em;
+	padding: 0.75em 1em 1em;
+}
+
+.digicyfr-opening-hours-pl-admin .digicyfr-opening-hours-pl-day legend {
+	font-weight: 600;
+	padding-inline: 0.25em;
+}
+
+.digicyfr-opening-hours-pl-admin .digicyfr-opening-hours-pl-pair {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em 1em;
+	margin-block: 0.5em;
+}
+
+.digicyfr-opening-hours-pl-admin .digicyfr-opening-hours-pl-pair label {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+}
+
+.digicyfr-opening-hours-pl-admin .digicyfr-opening-hours-pl-pair input {
+	width: 7em;
+}
+
+.digicyfr-opening-hours-pl-admin .digicyfr-opening-hours-pl-preview {
+	margin-block-start: 2em;
+}
+
+.digicyfr-opening-hours-pl-admin form textarea,
+.digicyfr-opening-hours-pl-admin form input {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+.digicyfr-opening-hours-pl-admin form textarea {
+	width: 100%;
+}
+
+@media (max-width: 600px) {
+	.digicyfr-opening-hours-pl-admin .digicyfr-opening-hours-pl-pair label {
+		flex-wrap: wrap;
+	}
+}

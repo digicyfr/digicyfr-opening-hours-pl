@@ -1,0 +1,14 @@
+{
+  "apiVersion": 3,
+  "name": "digicyfr/opening-hours",
+  "title": "Opening Hours PL",
+  "category": "widgets",
+  "icon": "clock",
+  "description": "Show the next seven days of owner-entered opening hours.",
+  "textdomain": "digicyfr-opening-hours-pl",
+  "editorScript": "digicyfr-opening-hours-pl-editor",
+  "style": "digicyfr-opening-hours-pl-style",
+  "supports": {
+    "html": false
+  }
+}

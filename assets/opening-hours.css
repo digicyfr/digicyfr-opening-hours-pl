@@ -1,0 +1,34 @@
+.digicyfr-opening-hours-pl {
+	margin-block: 1em;
+	overflow-x: auto;
+}
+
+.digicyfr-opening-hours-pl table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.digicyfr-opening-hours-pl caption {
+	font-weight: 600;
+	margin-block-end: 0.5em;
+	text-align: start;
+}
+
+.digicyfr-opening-hours-pl th,
+.digicyfr-opening-hours-pl td {
+	border-block-end: 1px solid currentColor;
+	padding: 0.4em 0.75em 0.4em 0;
+	text-align: start;
+	vertical-align: top;
+}
+
+.digicyfr-opening-hours-pl__exception {
+	display: block;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+.digicyfr-opening-hours-pl__notice {
+	border-inline-start: 0.25em solid currentColor;
+	padding-inline-start: 0.75em;
+}
