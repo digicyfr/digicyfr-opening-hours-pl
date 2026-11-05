@@ -2,6 +2,18 @@
 
 A free, GPL-licensed WordPress plugin for one location's owner-entered weekly opening hours, manually entered date exceptions, and a temporary notice. It renders the next seven dates in the WordPress site timezone through the **Opening Hours PL** block or `[digicyfr_opening_hours]` shortcode. The settings screen includes a saved-data preview. English and Polish translations are bundled.
 
+**Po polsku:** Dla sklepu lub firmy usługowej z jedną lokalizacją: pokaż najbliższe siedem dni na podstawie własnego grafiku. Święta, niedziele handlowe i inne wyjątki trzeba wpisać ręcznie.
+
+## Website guides and stable release
+
+- [Opening Hours PL: English overview and installation](https://www.digicyfr.com/en/wordpress-plugins/digicyfr-opening-hours-pl)
+- [Godziny otwarcia PL: opis i instalacja po polsku](https://www.digicyfr.com/pl/wordpress-plugins/digicyfr-opening-hours-pl)
+- [Stable v0.1.0 release, ZIP and checksum](https://github.com/digicyfr/digicyfr-opening-hours-pl/releases/tag/v0.1.0)
+
+<a href="https://www.digicyfr.com/pl/wordpress-plugins/digicyfr-opening-hours-pl"><img src="https://www.digicyfr.com/images/wordpress-plugins/digicyfr-opening-hours-pl.png" alt="Example seven-day opening hours block on a WordPress test page" width="520"></a>
+
+_Example screenshot from a disposable test site._
+
 ## Install and use
 
 1. In **Plugins → Add New → Upload Plugin**, upload the release ZIP and activate it. WordPress 7.1+ and PHP 8.3+ are required.
