@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-05",
+  "method": "Disposable test-only WordPress MU full-page cache with 300-second transient TTL; fixed UTC offset aligned site-local 23:59 to the next real UTC minute. This is a synthetic cache model, not a third-party production cache.",
+  "aligned": "UTC 2026-11-05 09:38:34; offset minutes -579; local 2026-11-04 23:59:34 -09:39",
+  "waitedMs": 27121,
+  "initial": {
+    "status": 200,
+    "cache": "MISS",
+    "firstDate": "2026-11-04",
+    "rows": 7,
+    "notice": false
+  },
+  "cachedBefore": {
+    "status": 200,
+    "cache": "HIT",
+    "firstDate": "2026-11-04",
+    "rows": 7,
+    "notice": false
+  },
+  "cachedAfterMidnight": {
+    "status": 200,
+    "cache": "HIT",
+    "firstDate": "2026-11-04",
+    "rows": 7,
+    "notice": false
+  },
+  "purged": "purged at 2026-11-05 00:00:03 -09:39",
+  "freshAfterPurge": {
+    "status": 200,
+    "cache": "MISS",
+    "firstDate": "2026-11-05",
+    "rows": 7,
+    "notice": true
+  },
+  "conclusion": "Cached HTML retained prior local date after midnight; purging forced the seven-day window to advance."
+}

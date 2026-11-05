@@ -1,0 +1,764 @@
+{
+  "date": "2026-11-05",
+  "zipSha256": "ab3a1b0f326387c652ee3bd27d7fadc011d8738abec18eb0ae9ad1dbae3e4ea9",
+  "stack": "WordPress 7.1, PHP 8.3.33, MariaDB 11.4.13, Chromium 156",
+  "scans": {
+    "publicCore": {
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".is-responsive.items-justified-right.wp-block-navigation__container"
+              ],
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: ul"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "#comment"
+            ]
+          ]
+        }
+      ],
+      "passes": 26
+    },
+    "publicPlugin": {
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".is-responsive.items-justified-right.wp-block-navigation__container"
+              ],
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: ul"
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "passes": 21
+    },
+    "publicComponent": {
+      "violations": [],
+      "incomplete": [],
+      "passes": 3
+    },
+    "adminCore": {
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "label[for=\"new_admin_email\"]"
+            ],
+            [
+              "#new-admin-email-description"
+            ],
+            [
+              "#new-admin-email-description > strong"
+            ],
+            [
+              "tr:nth-child(7) > th"
+            ],
+            [
+              "label[for=\"users_can_register\"]"
+            ],
+            [
+              "label[for=\"default_role\"]"
+            ],
+            [
+              "#default_role"
+            ],
+            [
+              "label[for=\"WPLANG\"]"
+            ],
+            [
+              "#WPLANG"
+            ],
+            [
+              "label[for=\"timezone_string\"]"
+            ],
+            [
+              "#timezone_string"
+            ],
+            [
+              "#timezone-description"
+            ],
+            [
+              "abbr"
+            ],
+            [
+              "#utc-time"
+            ],
+            [
+              "#utc-time > code"
+            ],
+            [
+              "#local-time"
+            ],
+            [
+              "#local-time > code"
+            ],
+            [
+              ".timezone-info:nth-child(4) > span"
+            ],
+            [
+              ".timezone-info:nth-child(4) > span > code"
+            ],
+            [
+              "tr:nth-child(11) > th"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(2) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(2) > code"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(4) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(4) > code"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(6) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(6) > code"
+            ],
+            [
+              "label:nth-child(8) > .format-i18n.date-time-text"
+            ],
+            [
+              "label:nth-child(8) > code"
+            ],
+            [
+              "label:nth-child(10) > .format-i18n.date-time-text"
+            ],
+            [
+              "label:nth-child(10) > code"
+            ],
+            [
+              "label:nth-child(12) > .date-time-custom-text.date-time-text"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > p > strong"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > p > .example"
+            ],
+            [
+              "tr:nth-child(12) > th"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(2) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(2) > code"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(4) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(4) > code"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(6) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(6) > code"
+            ],
+            [
+              "label:nth-child(8) > .date-time-custom-text.date-time-text"
+            ],
+            [
+              "p:nth-child(12) > strong"
+            ],
+            [
+              "p:nth-child(12) > .example"
+            ],
+            [
+              ".date-time-doc > a"
+            ],
+            [
+              "label[for=\"start_of_week\"]"
+            ],
+            [
+              "#start_of_week"
+            ]
+          ]
+        }
+      ],
+      "passes": 30
+    },
+    "adminPlugin": {
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(9) > legend"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(10) > legend"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(11) > legend"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(12) > legend"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(13) > legend"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "h2:nth-child(14)"
+            ],
+            [
+              "#digicyfr-opening-hours-pl-exception-help"
+            ],
+            [
+              "label > strong"
+            ],
+            [
+              "#digicyfr-opening-hours-pl-exceptions"
+            ],
+            [
+              "h2:nth-child(19)"
+            ],
+            [
+              "p:nth-child(20) > label"
+            ],
+            [
+              "p:nth-child(21) > label"
+            ],
+            [
+              "#digicyfr-opening-hours-pl-notice-text"
+            ],
+            [
+              "p:nth-child(22) > label:nth-child(1)"
+            ],
+            [
+              "label:nth-child(3)"
+            ],
+            [
+              ".digicyfr-opening-hours-pl-preview > h2"
+            ],
+            [
+              ".digicyfr-opening-hours-pl__notice"
+            ],
+            [
+              "caption"
+            ],
+            [
+              "th[scope=\"col\"]:nth-child(1)"
+            ],
+            [
+              "th[scope=\"col\"]:nth-child(2)"
+            ],
+            [
+              "time[datetime=\"2026-11-05\"]"
+            ],
+            [
+              "tr:nth-child(1) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-06\"]"
+            ],
+            [
+              ".digicyfr-opening-hours-pl__exception"
+            ],
+            [
+              "tr:nth-child(2) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-07\"]"
+            ],
+            [
+              "tr:nth-child(3) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-08\"]"
+            ],
+            [
+              "tr:nth-child(4) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-09\"]"
+            ],
+            [
+              "tr:nth-child(5) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-10\"]"
+            ],
+            [
+              "tr:nth-child(6) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-11\"]"
+            ],
+            [
+              "tr:nth-child(7) > td"
+            ],
+            [
+              ".digicyfr-opening-hours-pl-preview > p"
+            ],
+            [
+              "code"
+            ]
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    "adminForm": {
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(8) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(9) > legend"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(9) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(10) > legend"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(10) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(11) > legend"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(11) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(12) > legend"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(12) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(13) > legend"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(2) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(3) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(4) > label:nth-child(2)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(1)"
+            ],
+            [
+              "fieldset:nth-child(13) > .digicyfr-opening-hours-pl-pair:nth-child(5) > label:nth-child(2)"
+            ],
+            [
+              "h2:nth-child(14)"
+            ],
+            [
+              "#digicyfr-opening-hours-pl-exception-help"
+            ],
+            [
+              "label > strong"
+            ],
+            [
+              "#digicyfr-opening-hours-pl-exceptions"
+            ],
+            [
+              "h2:nth-child(19)"
+            ],
+            [
+              "p:nth-child(20) > label"
+            ],
+            [
+              "p:nth-child(21) > label"
+            ],
+            [
+              "#digicyfr-opening-hours-pl-notice-text"
+            ],
+            [
+              "p:nth-child(22) > label:nth-child(1)"
+            ],
+            [
+              "label:nth-child(3)"
+            ]
+          ]
+        }
+      ],
+      "passes": 12
+    },
+    "adminPreview": {
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              ".digicyfr-opening-hours-pl-preview > h2"
+            ],
+            [
+              ".digicyfr-opening-hours-pl__notice"
+            ],
+            [
+              "caption"
+            ],
+            [
+              "th[scope=\"col\"]:nth-child(1)"
+            ],
+            [
+              "th[scope=\"col\"]:nth-child(2)"
+            ],
+            [
+              "time[datetime=\"2026-11-05\"]"
+            ],
+            [
+              "tr:nth-child(1) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-06\"]"
+            ],
+            [
+              ".digicyfr-opening-hours-pl__exception"
+            ],
+            [
+              "tr:nth-child(2) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-07\"]"
+            ],
+            [
+              "tr:nth-child(3) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-08\"]"
+            ],
+            [
+              "tr:nth-child(4) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-09\"]"
+            ],
+            [
+              "tr:nth-child(5) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-10\"]"
+            ],
+            [
+              "tr:nth-child(6) > td"
+            ],
+            [
+              "time[datetime=\"2026-11-11\"]"
+            ],
+            [
+              "tr:nth-child(7) > td"
+            ],
+            [
+              ".digicyfr-opening-hours-pl-preview > p"
+            ],
+            [
+              "code"
+            ]
+          ]
+        }
+      ],
+      "passes": 2
+    }
+  },
+  "keyboard": {
+    "mondayStartTabTo": "digicyfr-opening-hours-pl-1-0-end",
+    "weeklyLabels": 56
+  },
+  "widths": {
+    "public": {
+      "document": 390,
+      "viewport": 390
+    },
+    "admin": {
+      "document": 390,
+      "viewport": 390
+    }
+  },
+  "axNamesPresent": [
+    "Opening hours for the next seven days",
+    "Date",
+    "Hours",
+    "Synthetic temporary notice"
+  ],
+  "pageErrors": []
+}

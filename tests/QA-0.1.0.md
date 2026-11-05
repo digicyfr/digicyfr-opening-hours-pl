@@ -17,6 +17,16 @@ The verified public asset was installed on a new disposable WordPress 7.1/PHP 8.
 - At a 390px viewport, the settings document width was 390px and the notice textarea ended at 378px. The public page also stayed 390px wide, with all seven rows visible. [Mobile settings](evidence/0.1.0/settings-390px.png) and [mobile public block](evidence/0.1.0/published-block-390px.png). No browser script errors occurred in the completed checks.
 - Both disposable containers and volumes were removed. The public ZIP, sidecar, release branch and tag were not changed by this documentation update.
 
+## Exact-ZIP automated accessibility and cache checks (2026-11-05)
+
+On another fresh WordPress 7.1/PHP 8.3.33 site, Playwright Chromium with axe-core 4.10.3 scanned WCAG 2 A/AA, 2.1 AA and 2.2 AA rules. The [machine-readable axe report](evidence/0.1.0/axe-audit-2026-11-05.json) contains the full findings.
+
+- The plugin's public seven-day table, admin form and admin preview had **zero axe violations**. The full public page had one `list` violation in the Twenty Twenty-Five navigation; the same rule and selector failed on a WordPress core post without the block. The WordPress core General Settings page and the plugin admin page had no axe violations.
+- Axe marked admin text/controls and preview text contrast **incomplete** (62 nodes in the form; 22 in the preview), as it did for 46 nodes on the WordPress core General Settings page. These nodes require manual visual or assistive-technology review; zero violations is not a contrast pass claim.
+- Tab from Monday's first start field reached its end field, 56 weekly interval labels were present, and the browser accessibility tree exposed the table caption, Date, Hours and the synthetic notice. The settings and public pages each fit a 390px document width and had no page JavaScript errors.
+- A separate [synthetic cache rollover report](evidence/0.1.0/synthetic-cache-midnight-2026-11-05.json) used a disposable test-only WordPress MU page-cache plugin with a five-minute transient TTL. A fixed site offset aligned local 23:59 to the next real UTC minute. The first request was a cache MISS on 2026-11-04, the next was a HIT, and after local midnight a HIT still served the 2026-11-04 seven-day table. Purging the test cache caused a MISS and a new table starting 2026-11-05. This confirms the documented need to expire or purge full-page cache at local midnight. It is a synthetic cache model; a third-party or production cache was not tested.
+- This automated scan is not a human NVDA/VoiceOver test. The disposable containers and volumes were removed; the published ZIP was unchanged.
+
 ## Checks passed
 
 - PHP 8.3.33 syntax for plugin and test PHP, JavaScript syntax, block JSON parse, and Polish MO load.
@@ -38,4 +48,4 @@ WordPress.org Plugin Check ran against the runtime-identical prior ZIP installed
 
 - The integration fixture uses real `update_option()`, which bypasses the `options.php` nonce, capability and unslash steps; the Chromium save exercises the actual nonce-protected `options.php` path. No forged contributor POST or screen-reader run was performed. Capability denial was checked at the settings page; WordPress core enforces the Settings API capability and nonce on POST.
 - No upgrade migration exists yet because 0.1.0 is the first version. Older WordPress/PHP versions and multisite network behavior were not tested. Uninstall multisite code follows the same pattern used by plugin #1 but was not exercised on a multisite fixture.
-- Interactive editor insertion also passed on the exact public ZIP after tagging. A full screen-reader run remains a stable-publication check. A full-page cache rollover was documented but not tested with a cache plugin.
+- Interactive editor insertion also passed on the exact public ZIP after tagging. A full screen-reader run remains a stable-publication check. The synthetic page-cache rollover above passed; a representative third-party or production full-page cache remains untested.
